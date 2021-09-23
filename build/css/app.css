@@ -269,7 +269,7 @@ h3 span {
 
 .heading-blanco:after,
 h2:after {
-    background-image: url(/granos-de-cafe.png);
+    background-image: url(granos-de-cafe.png);
     background-size: 10rem;
     content: "";
     display: block;
