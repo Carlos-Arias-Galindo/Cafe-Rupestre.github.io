@@ -255,9 +255,21 @@ h2 span {
     font-size: 1.8rem
 }
 
+.subh2,
+h3 {
+    color: #5e311e;
+    font-size: 3.6rem
+}
+
+.subh2 span,
+h3 span {
+    color: #c39c63;
+    display: block;
+}
+
 .heading-blanco:after,
 h2:after {
-    background-image: url(../img/cafe.svg);
+    background-image: url(/granos-de-cafe.png);
     background-size: 10rem;
     content: "";
     display: block;
@@ -337,7 +349,7 @@ h3 {
 }
 
 .header-galeria {
-    background-image: url(../img/header_galeria.jpg)
+    background-image: url(/LOGOytaza.gif)
 }
 
 .header-contacto {
@@ -399,7 +411,8 @@ h3 {
 @media (min-width:768px) {
     .barra .logo {
         margin: 0;
-        width: 20rem
+        width: 20rem;
+        box-shadow: 10px rgb(0, 0, 0);
     }
 }
 
@@ -472,7 +485,7 @@ h3 {
     .iconos .listado-iconos {
         display: grid;
         gap: 2rem;
-        grid-template-columns: repeat(3, 1fr)
+        grid-template-columns: repeat(1, 1fr)
     }
 }
 
@@ -592,7 +605,7 @@ h3 {
     .grid-menu {
         display: grid;
         gap: 2rem;
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(1, 1fr)
     }
 }
 
@@ -670,7 +683,7 @@ h3 {
     border: 3rem solid #fff;
     box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, .35);
     -webkit-transform: rotate(-6deg);
-    transform: rotate(-6deg)
+    transform: rotate(-2deg)
 }
 
 .contenido-nosotros .texto blockquote {
@@ -678,6 +691,10 @@ h3 {
     font-size: 2rem;
     margin: 0;
     padding: 1rem
+}
+
+.contenido-nosotros .texto a {
+    color: rgb(175, 109, 10);
 }
 
 .proceso-cafe {
@@ -754,13 +771,18 @@ h3 {
 
 @media (min-width:768px) {
     .contenido-contacto {
-        background-image: url(../img/granos_cafe.jpg);
         background-position: 100%;
         background-repeat: no-repeat;
         background-size: 40%;
         display: grid;
         gap: 5rem;
         grid-template-columns: repeat(2, 1fr)
+    }
+    .contenido-contacto img {
+        border: 3rem solid rgb(0, 0, 0);
+        box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, .35);
+        -webkit-transform: rotate(-6deg);
+        transform: rotate(-2deg)
     }
 }
 
